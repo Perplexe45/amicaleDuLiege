@@ -16,15 +16,6 @@ h1,h2,h3,h4,h5,h6 {
   color: rgb(52, 53, 53);
 }
 
-/* .borderStyle {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-radius: 10px;
-  background:#fff;
-}  */
-
 .navbar-nav {
   height: 100%;
   width: 100%;
@@ -44,7 +35,7 @@ h1,h2,h3,h4,h5,h6 {
   display: block;
   margin: 0 auto;
   width: 0%;
-  height: 2px;
+  height: 3px;
   background: #f1f1f1;
   transition: width 0.2s ease-in-out;
 } 
@@ -59,6 +50,10 @@ h1,h2,h3,h4,h5,h6 {
 .cadre {
   padding-bottom: 10px;
   border-top: 1px solid #000;
+}
+
+.title {
+  background: #6fc04a;
 }
 
 .imgSituationGeo {
@@ -79,7 +74,7 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-.twoCards {
+.threeCards {
   width: 250px;
   height: 300px;
   margin: 30px auto;
@@ -88,45 +83,39 @@ h1,h2,h3,h4,h5,h6 {
   box-shadow:0px 10px 30px black;
 }
 
-.twoCards:hover {
+.threeCards:hover {
   transform: scale(1.1);
 }
-
-.btn {
-  height: 40px;
-  align-items: center;
+.cardOne {
+  background:#90BE6D;
 }
+ .cardTwo {
+  background: #F8961E;
+ }
+ .cardThree {
+  background: #F94144;
+ }
 
 /* Formulaire */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.styleForms {
+  border: solid 1px #90BE6D;
+  margin:auto;
+  padding: auto;
+  border-radius: 1rem; 
+  background: #F9C74F;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+footer p {
+  background-color: white;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+#btn {
+  position: relative;
+  justify-items: center;
+  align-self: auto;
 }
 
-.container .forms {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+
 
   
  

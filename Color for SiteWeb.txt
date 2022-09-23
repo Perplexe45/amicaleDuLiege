@@ -1,4 +1,0 @@
-#EAE509 --> Jaune
-#7DCE13 --> Vert clair
-#5BB318 --> Vert plus foncé
-#2B7A0B --> Vert foncé

@@ -8,17 +8,19 @@
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
       <!-- My CSS -->  
       <link rel="stylesheet" href="/assets/css/style.css">
+      <script src="https://kit.fontawesome.com/6ddde329a5.js" crossorigin="anonymous"></script>
       
-    <title>Document</title>
+    <title>L'amicale du liège</title>
 </head>
 <body>
   <div class="container">
-     <!-- Bandeau du site -->
-     <header>
+    <!-- Bandeau du site -->
+    <header>
       <img class="img-fluid"src="/assets/img/Bandeau_LesJardinDuLiege.png" alt="imageDeLassociation" />
-  </header>
+      
   
-  <!-- Création de la Navbar -->
+    </header>
+     <!-- Création de la Navbar -->
   <nav class="navbar bg-success bg-gradient navbar-dark navbar-expand-md sticky-top">
     <div class="container">
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarDuSite">
@@ -27,22 +29,23 @@
       <div id="navbarDuSite" class="collapse navbar-collapse">
         <ul class="navbar-nav fw-bold">
             <li class="item-nav" >
-                <a class="nav-link" href="#">Accueil</a>
+                <a class="nav-link active" href="./index.html">Accueil</a>
             </li>
             <li class="item-nav">
-                <a class="nav-link" href="#">Evènements</a>
+                <a class="nav-link" href="./evenement.html">Evènements</a>
             </li>
             <li class="item-nav">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
             </li>
         </ul>
       </div>
     </div>
   </nav>
+ 
 
   <!-- Présentation -->
   <div class="container bgDiv">
-    <div class="row cadre">
+    <div class="row cadre justify-content-center">
       <h1 class="text-center my-5">L'envie de jardiner vous prend !</h1>
        <div class="col-md-4 ps-5 cadre">
         <img class="img-fluid rounded my-5" src="/assets/img/jardiniersHeureux.png" alt="jardiners heureux"> 
@@ -63,25 +66,25 @@
     </div>
   </div>
 
-  <!-- Coordonnées de l'association -->
+  <!-- Coordonnées de l'association et local -->
   <div class="container bgDiv" >
     <div class="row">
-      <div class="col-md-6 ps-5 py-5 cadre borderStyle" >
+      <div class="col-md-6 ps-5 py-5 cadre borderStyle " >
         
-        <h3 class="my-3">Adresse de l'amicale du liège</h3>
-          <p class="my-2">
+        <h3 class="my-3 ps-5">Adresse de l'amicale du liège</h3>
+          <p class="my-2 ps-5">
             40 allée des marguerites <br> 
             37200 - Tours 
           </p><br>
 
-          <h3 class="">Responsable de l'association</h3>
-          <p class="my-2">
+          <h3 class="my-3 ps-5">Responsable de l'association</h3>
+          <p class="my-2 ps-5">
             Madame Verrier Renée<br> 
             Tel : 06.70.22.28.45 <br>
             Email : verrier.renee@free.fr
           </p>
       </div>
-      <div class="col-md-6 py-3 cadre">
+      <div class="col-md-6 py-4  cadre">
         <h3>Local de l'association</h3>
         <div class="container mt-3 g-0">
           <img src="/assets/img/localDuLiege.jpg" class="rounded" alt="Local de l'association" width="500" height="250">
@@ -91,8 +94,8 @@
   </div>
 
   <!-- Obligation du jardinier -->
-  <div class="container">
-    <div class="row bgDiv align-items-center cadre">
+  <div class="container position-relative">
+    <div class="row bgDiv align-items-center cadre justify-content-center ">
        <div class="col-5 mt-4 ps-5">
         <img class="img-fluid rounded" src="/assets/img/tableauInfosDuLiege.jpg" alt="jardiners heureux"> 
         <p class="fst-italic" ><span>(Informations mises à jour que doivent consulter les jardiniers)</span></p> 
@@ -100,206 +103,156 @@
        <div class="col-5 m-3 ps-5 py-4  borderStyle">
         <p class="my-4 ms-4">
           <h2>Obligation du jardinier</h2><br>
-          - Cultiver son jardin (Il ne doit jamais être en friche et ce, quelque soit la saison)<br><br>
-          - Etre sociable avec ses voisins (Eviter du mieux possible les nuisances sonores) <br><br>
-          - Se soustraire au règlement intérieur (Vérifier régulièrement le panneau d'affichage)
+            - Cultiver son jardin (Il ne doit jamais être en friche et ce, quelque soit la saison)<br><br>
+            - Etre sociable avec ses voisins (Eviter du mieux possible les nuisances sonores) <br><br>
+            - Se soustraire au règlement intérieur (Vérifier régulièrement le panneau d'affichage)
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Prix d'1 location de jardin : 2 cartes  --> 
+  <!-- Prix d'1 location de jardin : 3 cartes  --> 
   <section>
-    <div class="container cadre bgDiv">
-		<h2 class="text-center pt-4">Le prix d'une location de jardin à l'année</h2> 
-      	<div class="row row-cols-2 ps-5">
+    <div class="container cadre bgDiv d-flex">
+		  <div class="row col-8 justify-content-center">
+            <h2 class="text-center pt-4 ">Le prix d'une location de jardin à l'année</h2> 
 
-        	<div class="twoCards ps-4 py-3 bg-white">
-              	<h2>60.00 € / an</h2>
-				<p>Tarifs pour les jardiniers qui ont loué déja une année le jardin</p>
-				<button type="button" class="btn btn-success d-flex">Faire la demande</button>
-				
-			</div>
+            <div class="card threeCards text-center cardOne">
+              <div class="card-body">
+                  <h5 class="card-title">Adhérent</h5>
+                  <p class="card-text">
+                     - Jardinier depuis plus d'une année <br><br>
+                     - Renouvellement de la parcelle
+                  </p>
+                  <h2 class="text-center pb-2">60 € / an </h2>
+              </div>
+          </div>
 
-			<div class="twoCards ps-3 py-3 bg-white">
-				<h2>120.00 € / an</h2>
-				<p>Tarifs pour les nouveaux jardiniers. <br>
-					Une caution de 60.00 € est demandée pour la première année. </p>
-				<button type="button" class="btn btn-success d-flex">Faire la demande</button>
-			</div>
-		</div>
+            <div class="card threeCards text-center ps-3 py-1 cardTwo" style="height: 330px;">
+              <div class="card-body">
+                  <h5 class="card-title">Nouvel arrivant</h5>
+                  <p class="card-text">
+                     - Caution : 60 € (remboursée à la restitution du jardin). <br><br>
+                     - cotisation de 60 €
+                  </p>
+               </div>
+                  <h2 class="text-center pb-2">120 €</h2> <span style="font-size: 1rem;"> (la première année)</span> 
+                  <a href="#" class="btn btn-success">Faire la demande</a>
+              
+             
+          </div>
+        </div>
+
+        <div class="row col-4 mt-4 ps-5">
+            <h2 class="text-center">Pas de jardin</h2> 
+            <div class="card threeCards text-center cardThree">
+              <div class="card-body">
+                  <h5 class="card-title">Mauvais plan</h5>
+                  <p class="card-text">
+                     - Impossibilité de manger des légumes frais <br><br>
+                     - Ne pas connaître les joies du jardinage
+                  </p>
+                  <h2 class="text-center pb-2">0 € / an </h2>
+                  <a href="#" class="btn btn-success">Faire la demande</a>
+              </div>
+          </div>
+        </div>
+
+     
 	</div>
     
 </section>
 
-<!-- Prix d'1 location de jardin : 2 cartes  --> 
-<section>
-  <h3>Contact Form</h3>
-  <div class="container forms"> 
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<!-- Formulaire pour enregistrement avec l'association -->
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <!-- Début nous contacter -->
+     <section>
+      <div class="container text-center cadre bgDiv py-5">
+          <div class="row g-2">
+               <div class="col-12">
+               <h3>Contactez-nous</h3>
+               <p class="lead">N'hésitez-pas à nous laisser un message.</p>
+          </div>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-    <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+          <form class=" row col-6 styleForms">
+               <div class="row g-2 col-12 col-sm m-auto mt-2">
+                    <div class="col-6">
+                         <div class="input-group">
+                              <span class="input-group-text">
+                                   <span class="fas fa-user"></span>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Nom">
+                         </div>
+                    </div>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <div class="col-6">
+                         <div class="input-group">            
+                              <input type="text" class="form-control" placeholder="Prénom">
+                         </div>
 
-    <input type="submit" value="Submit">
-  </form>
-</div>
-</section>
+                    </div>
+               </div>
 
+               <div class="row g-2 col-12 m-auto">
+                    <div class="input-group">
+                         <span class="input-group-text">
+                         <span class="fa-sharp fa-solid fa-house"></span>
+                         </span>
+                         <input type="text" class="form-control" placeholder="Adresse">
+                    </div>
+               </div>
+              
+               <div class="row g-2 col-12 col-sm m-auto">
+                    <div class="col-6">
+                         <div class="input-group">
+                              <span class="input-group-text">
+                                   <span class="fa-sharp fa-solid fa-phone"></span>
+                              </span>
+                              <input type="text" class="form-control" placeholder="Téléphone">
+                         </div>
+                    </div>
 
-  
-  <div class="mt-5 p-4 bg-gradient text-white text-center">
-    <p>Footer</p>
-  </div>
+                    <div class="col-6">
+                         <div class="input-group">
+                         <span class="input-group-text">
+                              <span class="fa-sharp fa-solid fa-envelope"></span>
+                         </span>
+                         <input type="text" class="form-control" placeholder="E-mail">
+                    </div>
 
+               </div>
+                    
+               </div>
 
-  
-  <!-- TROISIEME ETAPE / UTILISER LA GRILLE BOOTSTRAP -->
-  <!-- <section style="background-image: url('https://believemy.com/uploads/f536b82491a5a3c07e60cf2b977ded35_03b49c2a70d5bf98d966a517f96cfb87.jpeg')">
-    <div class="container">
-      <div class="row">
-        <div class="col text-white p-5">
-          <h3 class="text-center">
-            Inscriptions ouvertes
-            <span class="d-block fw-light mt-5">Année 2180-2181</span>
-          </h3>
+               <div class="row col-12 g-2 col-sm m-auto">
+                    <div class="input-group">
+                         <span class="input-group-text">
+                              <span class="fa-sharp fa-solid fa-envelope"></span>
+                         </span>
+                         <label for="Textarea1"></label>
+                         <textarea class="form-control" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
+                         
+                    </div>
+               </div>
+
+               <div class="my-4">
+                    <input type="submit" value="Envoyer" class="btn btn-success btn-block btn-lg">
+               </div>
+         
+          </form>
+
           
-          <div class="dropdown text-center">
-            <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
-              Documents
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Dossier d'inscription</a>
-              <a class="dropdown-item" href="#">Règlement intérieur</a>
-              <a class="dropdown-item" href="#">Documents concernant l'internat</a>
-            </div>
-          </div>
+          
         </div>
-      </div>
-    </div>
-  </section>
-  
-  QUATRIEME ETAPE
-  <section class="bg-light p-3">
-    <div class="container">
-    
-      <h2>Meilleures ventes</h2>
-      
-      UTILISER LA GRILLE BOOTSTRAP
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="card m-3">                                             Mettez chaque item dans une carte bootstrap 
-            <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" alt="Echarpe" class="card-img-top" />
-            <div class="card-body" style="min-height: 130px">
-              <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn w-100 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#echarpeModal">Acheter</button>
-            </div>
-          </div>
-        </div> -->
-        <!-- 
-        <div class="col-lg-4 col-md-6">
-          <div class="card m-3">                                           Mettez chaque item dans une carte bootstrap 
-            <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" alt="Coupe" class="card-img-top" />
-            <div class="card-body" style="min-height: 130px">
-              <h5>La Coupe des 3 Sorciers</h5>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn w-100 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#coupeModal">Acheter</button>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6">
-          <div class="card m-3">                                              Mettez chaque item dans une carte bootstrap 
-            <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" alt="Baguette" class="card-img-top" />
-            <div class="card-body" style="min-height: 130px">
-              <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
-            </div>
-            <div class="card-footer">
-              <button type="button" class="btn w-100 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#baguetteModal">Acheter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-   CINQUIEME ETAPE
-  <footer class="bg-dark text-light p-3 text-end">
-    <div class="container">
-      © Harry Potter
-    </div>
-  </footer>
-  
-   MODAL
-  <div id="echarpeModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5>Echarpe deluxe Harry Potter Gryffondor pourpre et or</h5>
-          <button class="btn-close" data-bs-dismiss="modal"></button>                  Le bouton pour fermer la fenêtre modale 
-        </div>
-        <div class="modal-body">
-          <img src="https://believemy.com/uploads/e1ff85ab9cd49ddc4bc50c80900e904d_3ef8b3485482ff65551fc3cc7454dc8b.jpeg" alt="Echarpe" class="w-100" />
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bientôt disponible">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
+     </section>
+
+     <!-- Footer -->
+     <div class="p-4 bg-gradient text-black-50 bg-dark container bgDiv">
+     <p>Footer</p>
   </div>
+
+
   
-  <div id="coupeModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5>La Coupe des 3 Sorciers</h5>
-          <button class="btn-close" data-bs-dismiss="modal"></button>             Le bouton pour fermer la fenêtre modale
-        </div>
-        <div class="modal-body">
-          <img src="https://believemy.com/uploads/fab0785c6b803bfa89e7111d9deb0368_eb623574496b3cd82b5b358539f6b1eb.jpeg" alt="Coupe" class="w-100" />
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bientôt disponible">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div id="baguetteModal" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5>Baguette magique de Harry Potter avec boîte Ollivander</h5>
-          <button class="btn-close" data-bs-dismiss="modal"></button>                Le bouton pour fermer la fenêtre modale
-        </div>
-        <div class="modal-body">
-          <img src="https://believemy.com/uploads/34eaaa344edf7411a830f8946dc5fe67_ba6103b0bb201f60b88b8e033db25c7e.jpeg" alt="Baguette" class="w-100" />
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bientôt disponible">Ajouter au panier</button>
-        </div>
-      </div>
-    </div>
-  </div>  
-  </div> -->
    
 
   

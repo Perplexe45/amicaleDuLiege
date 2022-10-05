@@ -43,17 +43,25 @@ h1,h2,h3,h4,h5,h6 {
 .item-nav a:hover::after {
   width: 100%;
 } 
-.bgDiv {
-  background-color: #ecfcb3;
-}
 
 .cadre {
   padding-bottom: 10px;
-  border-top: 1px solid #000;
+  border-top: 2px solid #bbb;
+  background-color: #ecfcb3;
 }
 
 .title {
   background: #6fc04a;
+}
+
+img {
+  max-width: 100%;
+}
+
+.black-Cadre {
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: #e3bd92;
 }
 
 .imgSituationGeo {
@@ -74,6 +82,7 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
+
 .threeCards {
   width: 250px;
   height: 300px;
@@ -82,7 +91,6 @@ h1,h2,h3,h4,h5,h6 {
   transition:  0.2s ease-in;
   box-shadow:0px 10px 30px black;
 }
-
 .threeCards:hover {
   transform: scale(1.1);
 }
@@ -105,15 +113,32 @@ h1,h2,h3,h4,h5,h6 {
   background: #F9C74F;
 }
 
-footer p {
-  background-color: white;
+.btnForms {
+  display: block; 
+  width: 60%;
+  height: 50px;
+  border: 1px solid rgb(54, 38, 38);
+  border-radius: 10px;
 }
 
-#btn {
-  position: relative;
-  justify-items: center;
-  align-self: auto;
+.container-OneColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
+
+
+/* footer */
+
+footer {
+  background: #222;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
 
 
 

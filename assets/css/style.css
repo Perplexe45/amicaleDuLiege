@@ -10,6 +10,11 @@ body {
   background-color: #6fc04a
 }
 
+.global-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
 
 h1,h2,h3,h4,h5,h6 {
@@ -50,6 +55,10 @@ h1,h2,h3,h4,h5,h6 {
   background-color: #ecfcb3;
 }
 
+.cadreOblig {
+  justify-content-center;
+}
+
 .title {
   background: #6fc04a;
 }
@@ -62,6 +71,7 @@ img {
   border: solid 2px black;
   border-radius: 10px;
   background-color: #e3bd92;
+  margin: auto;
 }
 
 .imgSituationGeo {
@@ -85,7 +95,7 @@ img {
 
 .threeCards {
   width: 250px;
-  height: 300px;
+  height: 300px !important; 
   margin: 30px auto;
   position: relative;
   transition:  0.2s ease-in;
@@ -106,11 +116,11 @@ img {
 
 /* Formulaire */
 .styleForms {
-  border: solid 1px #90BE6D;
+  border: solid 1px #537638;
   margin:auto;
   padding: auto;
   border-radius: 1rem; 
-  background: #F9C74F;
+  background: #b5c07f;
 }
 
 .btnForms {
@@ -128,9 +138,23 @@ img {
   text-align: center;
 }
 
+/* Caroussel */
+.carousel-item img, carousel-inner carousel-item active img{
+  border-radius: 5%;
+  width: auto;
+  height: 300px;
+}
+.carousel-caption h3 {
+  color:#539c5d;
+  font-weight:bolder;
+}
+.carousel-caption p {
+  color:rgb(51, 1, 1);
+  font-size: 1rem;
+  border-radius: 5px;
+}
 
 /* footer */
-
 footer {
   background: #222;
   color: white;
@@ -140,26 +164,3 @@ footer {
 }
 
 
-
-
-  
- 
- 
-
-@media all and (max-width: 600px) {
-  header img { width: 100%; }
-}
-
-
-  
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-  @media screen and (max-width: 600px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-right {
-      float: none;
-    }
-  }

@@ -8,11 +8,12 @@
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
       <!-- My CSS -->  
       <link rel="stylesheet" href="/assets/css/style.css">
+      <link rel="stylesheet" media="only screen and (max-width: 500px)" href="./assets/css/style.mobile.css " />
       <script src="https://kit.fontawesome.com/6ddde329a5.js" crossorigin="anonymous"></script>
       
     <title>L'amicale du liège</title>
 </head>
-<body>
+<body class="h-100 global-container">
   <div class="container">
     <!-- Bandeau du site -->
     <header>
@@ -57,7 +58,7 @@
               Cette association gère plus de 500 jardins, qui ont chacun une superficie de 150 m².
             </p>
           </div>
-          <div class="col-md-4 ps-5 py-5 ">
+          <div class="col-md-4 ps-5 py-5 cadre">
             <h5 class="">Localisation du jardin familiale</h5> 
             <img class=" img-fluid rounded-1 imgSituationGeo" src="/assets/img/SituationGeoAmicale.png" alt="">
             <p class="fst-italic text-center " >(Passer la souris sur la photo pour agrandir)</p> 
@@ -67,10 +68,10 @@
 
       <!-- Coordonnées de l'association et local -->
       <div class="container" >
-        <div class="row cadre">
-          <div class="col-md-6 ps-5 py-5" >
+        <div class="row cadre ">
+          <div class="col-md-6 ps-5 py-5 cadreAssoc" >
             
-            <h3 class="my-3 ps-5">Adresse de l'amicale du liège</h3>
+            <h3 class=" my-3 ps-5">Adresse de l'amicale du liège</h3>
               <p class="my-2 ps-5 fs-5 lh-sm">
                 40 allée des marguerites <br> 
                 37200 - Tours 
@@ -78,12 +79,12 @@
 
               <h3 class="my-3 ps-5">Responsable de l'association</h3>
               <p class="my-2 ps-5 fs-5 lh-sm">
-                Madame Verrier Renée<br> 
-                Tel : 06.70.22.28.45 <br>
-                Email : verrier.renee@free.fr
+                Madame Dupond Jeanne<br> 
+                Tel : 01.02.03.04.05 <br>
+                Email : dupond.jeanne@free.fr
               </p>
           </div>
-          <div class="col-md-6 py-4">
+          <div class="col-md-6 py-4 ">
             <h3 class="decorationTitle">Local de l'association</h3>
             <div class="container mt-3 me-2 g-0">
               <img src="/assets/img/localDuLiege.jpg" class="rounded" alt="Local de l'association" width="500" height="250">
@@ -94,91 +95,106 @@
 
       <!-- Obligations du jardinier -->
       <div class="container">
-        <div class="row align-items-center cadre justify-content-center ">
-          <div class="col-5 mt-4 ps-5">
-            <img class="img-fluid rounded" src="/assets/img/tableauInfosDuLiege.jpg" alt="jardiners heureux"> 
-            <p class="fst-italic" ><span>(Informations mises à jour que doivent consulter les jardiniers)</span></p> 
+        <div class="row align-items-center justify-content-center cadre">
+            <div class="col-4 mt-4 ps-5 ms-5 obligJardinier">
+              <img class="img-fluid rounded" src="/assets/img/tableauInfosDuLiege.jpg" alt="jardiners heureux"> 
+              <p class="fst-italic" ><span>(Informations mises à jour que doivent consulter les jardiniers)</span></p> 
+            </div>
+          
+            <div class="col-5 m-3 ps-5 pb-2 mt-4 pt-4 black-Cadre ms-5 obligJardinier">
+              <h2 class="my-1">Obligation du jardinier</h2><br>
+              <p class="fs-5 lh-sm">
+                  - Cultiver son jardin (Il ne doit jamais être en friche et ce, quelque soit la saison)<br><br>
+                  - Etre sociable avec ses voisins (Eviter du mieux possible les nuisances sonores) <br><br>
+                  - Se soustraire au règlement intérieur (Vérifier régulièrement le panneau d'affichage)
+              </p>
           </div>
-          <div class="col-5 m-3 ps-5 py-3 black-Cadre">
-            <h2 class="my-2">Obligation du jardinier</h2><br>
-            <p class="my-1 fs-5 lh-sm ">
-                - Cultiver son jardin (Il ne doit jamais être en friche et ce, quelque soit la saison)<br><br>
-                - Etre sociable avec ses voisins (Eviter du mieux possible les nuisances sonores) <br><br>
-                - Se soustraire au règlement intérieur (Vérifier régulièrement le panneau d'affichage)
-            </p>
-          </div>
+          <div class="col-1"></div>
         </div>
       </div>
 
       <!-- Prix d'1 location de jardin : 3 cartes  --> 
-      <section>
-        <div class="container cadre d-flex">
-          <div class="row col-8 justify-content-center">
-                <h2 class=" decorationTitle text-center pt-4 ">Le prix d'une location de jardin à l'année</h2> 
+      <section  class="container"  >
+        <div class="row col-12">
+          <div class="col-8">
 
-                <div class="card threeCards text-center cardOne">
-                  <div class="card-body">
-                      <h5 class="card-title">Adhérent</h5>
-                      <p class="card-text">
-                        - Jardinier depuis plus d'une année <br><br>
-                        - Renouvellement de la parcelle
-                      </p>
-                      <h2 class="text-center pb-2">60 € / an </h2>
-                  </div>
+          </div>
+          <div class="col-4">
+            
+          </div>
+
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center mt-0">
+          <div class="cadre d-flex flex-column align-items-center">
+            <div class="card threeCards text-center cardOne">
+              <div class="card-body">
+                  <h5 class="card-title">Adhérent</h5>
+                  <p class="card-text">
+                    - Jardinier depuis plus d'une année <br><br>
+                    - Renouvellement de la parcelle
+                  </p>
+                  <h2 class="text-center pb-2">60 € / an </h2>
               </div>
+          </div>
+          </div>
 
-                <div class="card threeCards text-center cardTwo" style="height: 300px;">
-                  <div class="card-body">
-                      <h5 class="card-title">Nouvel arrivant</h5>
-                      <p class="card-text">
-                        - Caution : 60 € <br><span style="font-size: 0.8rem; line-height: 20px;">(remboursée à la restitution du jardin).</span> <br><br>
-                        - cotisation de 60 €
-                      </p>
-                  </div>
-                  <div style="padding:5px 10px ;">
-                    <h2 class="text-center">120 €</h2>
-                    
-                    <a href="#" class="btn btn-success">Faire la demande</a>
-                    
-                  </div>
+
+          <div class="cadre d-flex flex-column align-items-center">
+            <div class="card threeCards text-center cardTwo" style="height: 300px;">
+              <div class="card-body">
+                  <h5 class="card-title">Nouvel arrivant</h5>
+                  <p class="card-text">
+                    - Caution : 60 € <br><span style="font-size: 0.8rem; line-height: 20px;">(remboursée à la restitution du jardin).</span> <br><br>
+                    - cotisation de 60 €
+                  </p>
               </div>
-            </div>
-
-            <div class="row col-4 mt-4">
-                <h2 style="text-align:center";>Pas de jardin</h2> 
-                <div class="card threeCards text-center cardThree">
-                  <div class="card-body">
-                      <h5 class="card-title">Mauvais plan</h5>
-                      <p class="card-text">
-                        - Impossibilité de manger des légumes frais <br><br>
-                        - Ne pas connaître les joies du jardinage
-                      </p>
-                      <h2 class="text-center pb-2">0 € / an </h2>
-                      <a href="#" class="btn btn-success">Faire la demande</a>
-                  </div>
+              <div style="padding:5px 10px ;">
+                <h2 class="text-center">120 €</h2>
+                <a href="#contact" class="btn btn-success">Faire la demande</a>
               </div>
             </div>
+          </div>
+
+
+          <div class="cadre d-flex flex-column align-items-center">
+            <div class="card threeCards text-center cardThree">
+              <div class="card-body">
+                  <h5 class="card-title">Pas encore de jardin</h5>
+                  <p class="card-text">
+                    - Impossibilité de manger des légumes frais <br><br>
+                    - Ne pas connaître les joies du jardinage
+                  </p>
+                  <h2 class="text-center pb-2">0 € / an </h2>
+                  <a href="#contact" class="btn btn-success">Faire la demande</a>
+              </div>
+          </div>
+          </div>
+
       </div>
+
+
+
+        
         
       </section>
 
       <!-- Formulaire pour enregistrement avec l'association -->
-      <section id="contact">
+      <section>
         <div class="container text-center cadre py-5">
             <div class="row g-2">
                 <div class="col-12">
                 <h3>Contactez-nous</h3><br>
-                
             </div>
 
-            <form class=" row col-6 styleForms">
+            <form class=" container row col-6 styleForms">
                 <div class="row g-2 col-12 col-sm m-auto mt-2">
                       <div class="col-6">
                           <div class="input-group">
                                 <span class="input-group-text">
                                     <span class="fas fa-user"></span>
                                 </span>
-                                <input type="text" class="form-control" placeholder="Nom">
+                                <input id="contact" type="text" class="form-control" placeholder="Nom">
                           </div>
                       </div>
 
@@ -220,7 +236,6 @@
                 </div>
                       
                 </div>
-
                 <div class="row col-12 g-2 col-sm m-auto">
                       <div class="input-group">
                           <span class="input-group-text">
@@ -228,18 +243,14 @@
                           </span>
                           <label for="Textarea1"></label>
                           <textarea class="form-control" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
-                          
                       </div>
                 </div>
-
                 <div >
                   <button type="submit" class="btn btn-lg btn-success my-4 row col-10 m-auto">Envoyer</button>
                 </div>
           
             </form>
-
-            
-            
+          </div>
           </div>
       </section>
     </main>
@@ -254,9 +265,9 @@
      
 
     <!-- Bootstrap JavaScript -->
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- My JavaScript -->
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
 

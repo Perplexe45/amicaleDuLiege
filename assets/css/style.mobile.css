@@ -1,0 +1,11 @@
+.cadreAssoc {
+    display: flex;
+    flex-direction: column;
+    margin-left: -2em;
+} 
+
+.obligJardinier {
+   display: flex;
+   flex-direction: column;
+    
+}

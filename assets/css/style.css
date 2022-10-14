@@ -55,9 +55,14 @@ h1,h2,h3,h4,h5,h6 {
   background-color: #ecfcb3;
 }
 
-.cadreOblig {
-  justify-content-center;
+.orangeCadre {
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: #e3bd92;
+  margin: auto;
 }
+  
+
 
 .title {
   background: #6fc04a;
@@ -67,7 +72,7 @@ img {
   max-width: 100%;
 }
 
-.black-Cadre {
+.blackCadre {
   border: solid 2px black;
   border-radius: 10px;
   background-color: #e3bd92;
@@ -75,6 +80,19 @@ img {
 }
 
 .imgSituationGeo {
+  width: 400px;
+  transition: transform .1s;
+  cursor: pointer;
+  border: solid 1px rgb(32, 90, 5);
+}
+
+.imgSituationGeo:hover {
+  -ms-transform: scale(1.7); /* IE 9 */
+  -webkit-transform: scale(1.7); /* Safari 3-8 */
+  transform: scale(1.8);
+}
+
+.imgInCard {
   width: 400px;
   transition: transform .1s;
   cursor: pointer;
@@ -152,6 +170,10 @@ img {
   color:rgb(51, 1, 1);
   font-size: 1rem;
   border-radius: 5px;
+}
+
+.imgSideToSide {
+  float: left;
 }
 
 /* footer */

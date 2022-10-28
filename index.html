@@ -184,84 +184,92 @@
           </div>
 
       </div>
-
-
-
-        
-        
       </section>
 
       <!-- Formulaire pour enregistrement avec l'association -->
       <section>
+        
         <div class="container text-center cadre py-5">
-            <div class="row g-2">
-                <div class="col-12">
-                <h3>Contactez-nous</h3><br>
+          <div class="row g-2">
+              <div class="col-12">
+              <h3>Contactez-nous</h3><br>
+          </div>
+
+          <form class="container row col-6 styleForms" id="contact">
+            <div class="row g-2 col-12 col-sm m-auto">
+              <div class="col-3 d-flex  civility bg-light">
+                <div class="form-check form-check-inline m-auto">
+                  <input class="form-check-input man" type="radio" name="civility" id="man" value="man">
+                  <label class="form-check-label" for="man">Mr</label>
+                </div>
+                <div class="form-check form-check-inline m-auto">
+                  <input class="form-check-input ms-0 woman" type="radio" name="civility" id="woman" value="woman">
+                  <label class="form-check-label ms-2" for="woman">Mme</label>
+                </div>
+              </div>
+              <div class="col">
+                  <div class="input-group">
+                        <span class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </span>
+                        <input type="text" class="form-control lastName" placeholder="Nom">
+                  </div>
+              </div>
+
+              <div class="col">
+                  <div class="input-group">            
+                        <input type="text" class="form-control firstName" placeholder="Prénom">
+                  </div>
+
+              </div>
             </div>
 
-            <form class=" container row col-6 styleForms">
-                <div class="row g-2 col-12 col-sm m-auto mt-2">
-                      <div class="col-6">
-                          <div class="input-group">
-                                <span class="input-group-text">
-                                    <span class="fas fa-user"></span>
-                                </span>
-                                <input id="contact" type="text" class="form-control" placeholder="Nom">
-                          </div>
-                      </div>
+            <div class="row g-2 col-12 m-auto">
+              <div class="input-group">
+                  <span class="input-group-text">
+                  <span class="fa-sharp fa-solid fa-house"></span>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Adresse">
+              </div>
+            </div>
+            
+            <div class="row g-2 col-12 col-sm m-auto">
+              <div class="col-6">
+                <div class="input-group">
+                  <span class="input-group-text">
+                      <span class="fa-sharp fa-solid fa-phone"></span>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Téléphone">
+                </div>
+              </div>
 
-                      <div class="col-6">
-                          <div class="input-group">            
-                                <input type="text" class="form-control" placeholder="Prénom">
-                          </div>
-
-                      </div>
+              <div class="col-6">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <span class="fa-sharp fa-solid fa-envelope"></span>
+                  </span>
+                  <input type="text" class="form-control" placeholder="E-mail">
                 </div>
 
-                <div class="row g-2 col-12 m-auto">
-                      <div class="input-group">
-                          <span class="input-group-text">
-                          <span class="fa-sharp fa-solid fa-house"></span>
-                          </span>
-                          <input type="text" class="form-control" placeholder="Adresse">
-                      </div>
-                </div>
-                
-                <div class="row g-2 col-12 col-sm m-auto">
-                      <div class="col-6">
-                          <div class="input-group">
-                                <span class="input-group-text">
-                                    <span class="fa-sharp fa-solid fa-phone"></span>
-                                </span>
-                                <input type="text" class="form-control" placeholder="Téléphone">
-                          </div>
-                      </div>
-
-                      <div class="col-6">
-                          <div class="input-group">
-                          <span class="input-group-text">
-                                <span class="fa-sharp fa-solid fa-envelope"></span>
-                          </span>
-                          <input type="text" class="form-control" placeholder="E-mail">
-                      </div>
-
-                </div>
-                      
-                </div>
-                <div class="row col-12 g-2 col-sm m-auto">
-                      <div class="input-group">
-                          <span class="input-group-text">
-                                <span class="fa-sharp fa-solid fa-envelope"></span>
-                          </span>
-                          <label for="Textarea1"></label>
-                          <textarea class="form-control" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
-                      </div>
-                </div>
-                <div >
-                  <button type="submit" class="btn btn-lg btn-success my-4 row col-10 m-auto">Envoyer</button>
-                </div>
-          
-            </form>
+              </div>
+                  
+            </div>
+            <div class="row col-12 g-2 col-sm m-auto">
+                  <div class="input-group">
+                      <span class="input-group-text">
+                            <span class="fa-sharp fa-solid fa-envelope"></span>
+                      </span>
+                      <label for="Textarea1"></label>
+                      <textarea class="form-control" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
+                  </div>
+            </div>
+            <div class="formButton">
+              <!-- <button type="submit" class="btn btn-lg btn-success my-4 row col-10 m-auto">Envoyer</button> -->
+              <input class="greenButton" type="submit" value="Valider">
+            </div>
+            <div class="writeMessage"></div>
+        
+          </form>
           </div>
           </div>
       </section>

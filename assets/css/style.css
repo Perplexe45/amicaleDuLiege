@@ -1,13 +1,15 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   width: 100%;
   height: 100%;
-  background-color: #6fc04a
+  background-color: #6fc04a;
 }
 
 .global-container {
@@ -17,7 +19,12 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: rgb(52, 53, 53);
 }
 
@@ -29,25 +36,25 @@ h1,h2,h3,h4,h5,h6 {
 
 .item-nav a {
   font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
   margin: 0 20px;
 }
 
 .item-nav a::after {
-  content: "";
+  content: '';
   display: block;
   margin: 0 auto;
   width: 0%;
   height: 3px;
   background: #f1f1f1;
   transition: width 0.2s ease-in-out;
-} 
+}
 
 .item-nav a:hover::after {
   width: 100%;
-} 
+}
 
 .cadre {
   padding-bottom: 10px;
@@ -61,8 +68,6 @@ h1,h2,h3,h4,h5,h6 {
   background-color: #e3bd92;
   margin: auto;
 }
-  
-
 
 .title {
   background: #6fc04a;
@@ -81,7 +86,7 @@ img {
 
 .imgSituationGeo {
   width: 400px;
-  transition: transform .1s;
+  transition: transform 0.1s;
   cursor: pointer;
   border: solid 1px rgb(32, 90, 5);
 }
@@ -94,15 +99,16 @@ img {
 
 .imgInCard {
   width: 400px;
-  transition: transform .1s;
+  transition: transform 0.1s;
   cursor: pointer;
   border: solid 1px rgb(32, 90, 5);
 }
 
-.imgSituationGeo:hover {
+.imgInCard:hover {
   -ms-transform: scale(1.7); /* IE 9 */
   -webkit-transform: scale(1.7); /* Safari 3-8 */
-  transform: scale(1.8);
+  transform: scale(1.6);
+  z-index: 1;
 }
 
 #adress {
@@ -110,43 +116,75 @@ img {
   text-align: center;
 }
 
-
 .threeCards {
   width: 250px;
-  height: 300px !important; 
+  height: 300px !important;
   margin: 30px auto;
   position: relative;
-  transition:  0.2s ease-in;
-  box-shadow:0px 10px 30px black;
+  transition: 0.2s ease-in;
+  box-shadow: 0px 10px 30px black;
 }
 .threeCards:hover {
   transform: scale(1.1);
 }
 .cardOne {
-  background:#90BE6D;
+  background: #90be6d;
 }
- .cardTwo {
-  background: #F8961E;
- }
- .cardThree {
-  background: #F94144;
- }
+.cardTwo {
+  background: #f8961e;
+}
+.cardThree {
+  background: #f94144;
+}
 
 /* Formulaire */
+.civility {
+  margin-left: 5px;
+  height: 2.32rem;
+ border-radius: 5px;
+}
+
 .styleForms {
   border: solid 1px #537638;
-  margin:auto;
+  margin: auto;
   padding: auto;
-  border-radius: 1rem; 
+  border-radius: 1rem;
   background: #b5c07f;
 }
 
 .btnForms {
-  display: block; 
+  display: block;
   width: 60%;
   height: 50px;
   border: 1px solid rgb(54, 38, 38);
   border-radius: 10px;
+}
+
+.greenButton {
+  width: 8rem;
+  border: solid 0.5rem #198754;
+  border-radius: 10px;
+  background: #198754;
+  color: white;
+}
+
+
+.greenButton:hover {
+  background: #00610d;
+  
+}
+
+
+.formButton {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  
+ 
+}
+
+input .greenButton {
+  background: #198754;
+ 
 }
 
 .container-OneColumn {
@@ -157,17 +195,18 @@ img {
 }
 
 /* Caroussel */
-.carousel-item img, carousel-inner carousel-item active img{
+.carousel-item img,
+carousel-inner carousel-item active img {
   border-radius: 5%;
   width: auto;
   height: 300px;
 }
 .carousel-caption h3 {
-  color:#539c5d;
-  font-weight:bolder;
+  color: #539c5d;
+  font-weight: bolder;
 }
 .carousel-caption p {
-  color:rgb(51, 1, 1);
+  color: rgb(51, 1, 1);
   font-size: 1rem;
   border-radius: 5px;
 }
@@ -184,5 +223,3 @@ footer {
   text-align: center;
   padding-top: 10px;
 }
-
-

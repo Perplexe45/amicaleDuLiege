@@ -1,3 +1,29 @@
+<?php
+// On démarre une session
+session_start();
+
+// On inclut la connexion à la base
+require_once('connect.php');
+
+$sql = 'SELECT * FROM `jardinier`';
+
+// On prépare la requête
+$query = $db->prepare($sql);
+
+// On exécute la requête
+$query->execute();
+
+// On stocke le résultat dans un tableau associatif
+$result = $query->fetchAll(PDO::FETCH_ASSOC);
+
+require_once('close.php');
+?>
+<?php
+
+?> 
+
+
+
 <!DOCTYPE html>
 <html lang="fr-FR">
 <head>
@@ -5,9 +31,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap CSS -->
-      <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
       <!-- My CSS -->  
-      <link rel="stylesheet" href="/assets/css/style.css">
+      <link rel="stylesheet" href="./assets/css/style.css">
       <link rel="stylesheet" media="only screen and (max-width: 500px)" href="./assets/css/style.mobile.css " />
       <script src="https://kit.fontawesome.com/6ddde329a5.js" crossorigin="anonymous"></script>
       
@@ -17,7 +43,7 @@
   <div class="container">
     <!-- Bandeau du site -->
     <header>
-      <img class="img-fluid"src="/assets/img/Bandeau_LesJardinDuLiege.png" alt="imageDeLassociation" />
+      <img class="img-fluid"src="./assets/img/Bandeau_LesJardinDuLiege.png" alt="imageDeLassociation" />
     </header>
 
      <!-- Création de la Navbar -->
@@ -29,13 +55,13 @@
         <div id="navbarDuSite" class="collapse navbar-collapse">
           <ul class="navbar-nav fw-bold">
               <li class="item-nav" >
-                  <a class="nav-link active" href="./index.html">Accueil</a>
+                  <a class="nav-link active" href="./index.php">Accueil</a>
               </li>
               <li class="item-nav">
-                  <a class="nav-link" href="./evenement.html">Evènements</a>
+                  <a class="nav-link" href="./evenement.php">Evènements</a>
               </li>
               <li class="item-nav">
-                <a class="nav-link" href="./gestion.html">Gestion</a>
+                <a class="nav-link" href="./gestion.php">Gestion</a>
             </li>
               <li class="item-nav">
                   <a class="nav-link" href="#contact">Contact</a>
@@ -44,10 +70,7 @@
         </div>
       </div>
     </nav>
-    
-    
-
-    <div class="bg-danger blackCadre">
+      <div class="bg-danger blackCadre">
       <p style="font-size:1.4rem; text-align: center; color: rgb(247, 247, 241); font-weight: 700; padding-top:1rem;">
           Ce site a été uniquement conçu pour une évaluation avec un centre de formation. <br>
           Il n'est donc pas à prendre au sérieux.
@@ -59,10 +82,11 @@
       <div class="container">
         <div class="row cadre">
           <h1 class="text-center my-5">L'envie de jardiner vous prend !</h1>
-          <div class="col-md-4 ps-5 cadre">
-            <img class="img-fluid rounded my-5" src="/assets/img/jardiniersHeureux.png" alt="jardiners heureux"> 
+
+          <div class="col-md-4 ps-3 cadre">
+            <img class="img-fluid rounded my-5" src="./assets/img/jardiniersHeureux.png" alt="jardiners heureux"> 
           </div>
-          <div class="col-md-4 ps-5 cadre">
+          <div class="introduction col-md-4 ps-5 cadre">
             <p class="my-4 fs-5 lh-sm">
               Envie de jardiner, de cultiver vos légumes et vos fruits ? <br><br>
               A Tours, comme dans de nombreuses régions de France, des jardins familiaux permettent à chacun de bénéficier d'un espace à soi et de pouvoir cultiver ses légumes à moindre coût. <br><br>
@@ -70,10 +94,12 @@
               Cette association gère plus de 500 jardins, qui ont chacun une superficie de 150 m².
             </p>
           </div>
-          <div class="col-md-4 ps-5 py-5 cadre">
+          <div class="ps-2 py-5 col-sm-12 col-md-4 cadre">
             <h5 class="">Localisation du jardin familiale</h5> 
-            <img class=" img-fluid rounded-1 imgSituationGeo" src="/assets/img/SituationGeoAmicale.png" alt="">
-            <p class="fst-italic text-center" >(Passer la souris sur la photo pour agrandir)</p> 
+            <div class="localisationGarden">
+              <img class=" img-fluid rounded-1 imgSituationGeo" src="./assets/img/SituationGeoAmicale.png" alt="">
+              <p class="fst-italic text-center" >(Passer la souris sur la photo pour agrandir)</p> 
+            </div>
           </div>
         </div>
       </div>
@@ -83,23 +109,23 @@
         <div class="row cadre ">
           <div class="col-md-6 ps-5 py-5" >
             
-            <h3 class=" my-3 ps-5">Adresse de l'amicale du liège</h3>
-              <p class="my-2 ps-5 fs-5 lh-sm">
+            <h3 class=" my-3 ps-md-5">Adresse de l'amicale du liège</h3>
+              <p class="my-2 ps-md-5 fs-5 lh-sm">
                 40 allée des marguerites <br> 
                 37200 - Tours 
               </p><br>
 
-              <h3 class="my-3 ps-5">Responsable de l'association</h3>
-              <p class="my-2 ps-5 fs-5 lh-sm">
+              <h3 class="my-3 ps-md-5">Responsable de l'association</h3>
+              <p class="my-2 ps-md-5 fs-5 lh-sm">
                 Madame Dupond Jeanne<br> 
                 Tel : 01.02.03.04.05 <br>
                 Email : dupond.jeanne@free.fr
               </p>
           </div>
-          <div class="col-md-6 py-4 ">
-            <h3 class="decorationTitle">Local de l'association</h3>
+          <div class="imgHouse col-md-6 py-4 ">
+            <h3 class="ps-md-4">Local de l'association</h3>
             <div class="container mt-3 me-2 g-0">
-              <img src="/assets/img/localDuLiege.jpg" class="rounded" alt="Local de l'association" width="500" height="250">
+              <img src="./assets/img/localDuLiege.jpg" class="rounded" alt="Local de l'association" width="500" height="250">
             </div>
         </div>
         </div>
@@ -108,12 +134,12 @@
       <!-- Obligations du jardinier -->
       <div class="container">
         <div class="row align-items-center justify-content-center cadre">
-            <div class="col-4 mt-4 ps-5 ms-5 ">
-              <img class="img-fluid rounded" src="/assets/img/tableauInfosDuLiege.jpg" alt="jardiners heureux"> 
+            <div class="imgDisplay col-4 mt-4 ps-5 ms-5 ">
+              <img class="img-fluid rounded" src="./assets/img/tableauInfosDuLiege.jpg" alt="jardiners heureux"  width="420" height="200"> 
               <p class="fst-italic" ><span>(Informations mises à jour que doivent consulter les jardiniers)</span></p> 
             </div>
           
-            <div class="col-5 m-3 ps-5 pb-2 mt-4 pt-4 black-Cadre ms-5 orangeCadre">
+            <div class="cadreObligation col-5 m-3 ps-5 pb-2 mt-4 pt-4 orangeCadre">
               <h2 class="my-1">Obligation du jardinier</h2><br>
               <p class="fs-5 lh-sm">
                   - Cultiver son jardin (Il ne doit jamais être en friche et ce, quelque soit la saison)<br><br>
@@ -121,23 +147,13 @@
                   - Se soustraire au règlement intérieur (Vérifier régulièrement le panneau d'affichage)
               </p>
           </div>
-          <div class="col-1"></div>
+          
         </div>
       </div>
 
       <!-- Prix d'1 location de jardin : 3 cartes  --> 
       <section  class="container"  >
-        <div class="row col-12">
-          <div class="col-8">
-
-          </div>
-          <div class="col-4">
-            
-          </div>
-
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center mt-0">
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 justify-content-center mt-0">
           <div class="cadre d-flex flex-column align-items-center">
             <div class="card threeCards text-center cardOne">
               <div class="card-body">
@@ -160,11 +176,9 @@
                     - Caution : 60 € <br><span style="font-size: 0.8rem; line-height: 20px;">(remboursée à la restitution du jardin).</span> <br><br>
                     - cotisation de 60 €
                   </p>
+                  <h2 class="text-center">120 €</h2>
               </div>
-              <div style="padding:5px 10px ;">
-                <h2 class="text-center">120 €</h2>
-                <a href="#contact" class="btn btn-success">Faire la demande</a>
-              </div>
+              <h6>(Si vous êtes interessé, veuillez remplir le formulaire)</h6>
             </div>
           </div>
 
@@ -178,8 +192,8 @@
                     - Ne pas connaître les joies du jardinage
                   </p>
                   <h2 class="text-center pb-2">0 € / an </h2>
-                  <a href="#contact" class="btn btn-success">Faire la demande</a>
               </div>
+              <h6>(Si vous êtes interessé, veuillez remplir le formulaire)</h6>
           </div>
           </div>
 
@@ -195,30 +209,21 @@
               <h3>Contactez-nous</h3><br>
           </div>
 
-          <form class="container row col-6 styleForms" id="contact">
-            <div class="row g-2 col-12 col-sm m-auto">
-              <div class="col-3 d-flex  civility bg-light">
-                <div class="form-check form-check-inline m-auto">
-                  <input class="form-check-input man" type="radio" name="civility" id="man" value="man">
-                  <label class="form-check-label" for="man">Mr</label>
-                </div>
-                <div class="form-check form-check-inline m-auto">
-                  <input class="form-check-input ms-0 woman" type="radio" name="civility" id="woman" value="woman">
-                  <label class="form-check-label ms-2" for="woman">Mme</label>
-                </div>
-              </div>
-              <div class="col">
+          <form method="post" action="index.php" class="container w-75 row col-6 styleForms flex-shrink-1" id="contact">
+            <div class="row g-2 col-12  m-auto">
+              
+              <div class="col name">
                   <div class="input-group">
                         <span class="input-group-text">
                             <span class="fas fa-user"></span>
                         </span>
-                        <input type="text" class="form-control lastName" placeholder="Nom">
+                        <input type="text" name="lastName" class="form-control" placeholder="Nom" required>
                   </div>
               </div>
 
               <div class="col">
                   <div class="input-group">            
-                        <input type="text" class="form-control firstName" placeholder="Prénom">
+                        <input type="text" name="firstName" class="form-control" placeholder="Prénom" required>
                   </div>
 
               </div>
@@ -229,26 +234,26 @@
                   <span class="input-group-text">
                   <span class="fa-sharp fa-solid fa-house"></span>
                   </span>
-                  <input type="text" class="form-control" placeholder="Adresse">
+                  <input type="text" name="adress" class="form-control" placeholder="Adresse" required>
               </div>
             </div>
             
             <div class="row g-2 col-12 col-sm m-auto">
-              <div class="col-6">
+              <div class="col-5">
                 <div class="input-group">
                   <span class="input-group-text">
                       <span class="fa-sharp fa-solid fa-phone"></span>
                   </span>
-                  <input type="text" class="form-control" placeholder="Téléphone">
+                  <input type="text" name="phone" class="form-control" placeholder="Téléphone" required>
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-7">
                 <div class="input-group">
                   <span class="input-group-text">
                     <span class="fa-sharp fa-solid fa-envelope"></span>
                   </span>
-                  <input type="text" class="form-control" placeholder="E-mail">
+                  <input type="text" name="email" class="form-control" placeholder="E-mail">
                 </div>
 
               </div>
@@ -260,14 +265,14 @@
                             <span class="fa-sharp fa-solid fa-envelope"></span>
                       </span>
                       <label for="Textarea1"></label>
-                      <textarea class="form-control" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
+                      <textarea class="form-control" name="memo" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
                   </div>
             </div>
             <div class="formButton">
               <!-- <button type="submit" class="btn btn-lg btn-success my-4 row col-10 m-auto">Envoyer</button> -->
-              <input class="greenButton" type="submit" value="Valider">
+              <button class="greenButton" type="submit" value="Valider">Envoyer</button>
             </div>
-            <div class="writeMessage"></div>
+            <div class="contactMessage"></div>
         
           </form>
           </div>
@@ -287,7 +292,9 @@
     <!-- Bootstrap JavaScript -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- My JavaScript -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+		<?php require_once('src/footer.php'); ?>
 </body>
 </html>
 

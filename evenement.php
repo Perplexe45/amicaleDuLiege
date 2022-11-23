@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- My CSS -->  
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/6ddde329a5.js" crossorigin="anonymous"></script>
     <title>Evénements de l'année 2022</title>
 </head>
@@ -15,7 +15,7 @@
   <div class="container">
     <!-- Bandeau du site -->
     <header>
-     <img class="img-fluid"src="/assets/img/Bandeau_LesJardinDuLiege.png" alt="imageDeLassociation" />
+     <img class="img-fluid"src="./assets/img/Bandeau_LesJardinDuLiege.png" alt="imageDeLassociation" />
  </header>
  
  <!-- Création de la Navbar -->
@@ -27,16 +27,16 @@
      <div id="navbarDuSite" class="collapse navbar-collapse">
        <ul class="navbar-nav fw-bold">
            <li class="item-nav" >
-               <a class="nav-link" href="./index.html">Accueil</a>
+               <a class="nav-link" href="./index.php">Accueil</a>
            </li>
            <li class="item-nav">
-               <a class="nav-link active" href="./evenement.html">Evènements</a>
+               <a class="nav-link active" href="./evenement.php">Evènements</a>
            </li>
            <li class="item-nav">
-            <a class="nav-link" href="./gestion.html">Gestion</a>
+            <a class="nav-link" href="./gestion.php">Gestion</a>
         </li>
            <li class="item-nav">
-               <a class="nav-link" href="./index.html#contact">Contact</a>
+               <a class="nav-link" href="./index.php#contact">Contact</a>
            </li>
        </ul>
      </div>
@@ -51,7 +51,7 @@
       <div class="col-md-1 cadre"></div>
       
       <div class="col-md-4 cadre container-OneColumn">
-        <img class="img-fluid rounded" src="/assets/img/SalleDesFetes.jpg" alt="Salle des fêtes"> 
+        <img class="img-fluid rounded" src="./assets/img/SalleDesFetes.jpg" alt="Salle des fêtes"> 
         <p class="fst-italic"><span>(Salle des fêtes des fontaines)</span></p>
       </div>
       <div class="col-md-6 ps-5 cadre">
@@ -175,7 +175,7 @@
   
 </section>
 
-<!-- Concours du plus beau jardin -->
+<!-- Concours du plus beau jardin + formulaire d'inscription-->
 <section class="cadre">
   <div class="container">
     <div class="row">
@@ -197,77 +197,69 @@
 
       <div class="container">
         <div class="row">
-         
-
-          <!-- Formulaire d'inscription -->
-          <div class="col-md-5 w-50 m-auto text-center">
-            <h3 class="pt-3 pb-3 text-center">Formulaire d'inscription</h3>
-            <form class="row col-6 styleForms" style="width: 500px;" >
+         <!-- Formulaire d'inscription -->
+          <div class="p-5 text-center m-auto">
+            <h3 class="pt-5 pb-3 text-center">Formulaire d'inscription</h3>
+            <form class=" styleForms w-75" id="formBeautifulGarden" >
               <div class="row g-2 col-12 col-sm m-auto mt-2">
-                    <div class="col-6">
-                        <div class="input-group">
-                              <span class="input-group-text">
-                                  <span class="fas fa-user"></span>
-                              </span>
-                              <input type="text" class="form-control" placeholder="Nom">
-                        </div>
+                <div class="col-6">
+                    <div class="input-group">
+                          <span class="input-group-text">
+                            <span class="fas fa-user"></span>
+                          </span>
+                          <input type="text" class="form-control firstNameRegistration" placeholder="Nom" required>
                     </div>
+                </div>
 
-                    <div class="col-6">
-                        <div class="input-group">            
-                              <input type="text" class="form-control" placeholder="Prénom">
-                        </div>
-
-                    </div>
+                <div class="col-6">
+                  <div class="input-group">            
+                        <input type="text" class="form-control lastNameRegistration" placeholder="Prénom" required>
+                  </div>
+                </div>
               </div>
-
-             
               
               <div class="row g-2 col-12 col-sm m-auto">
-                    <div class="col-6">
-                        <div class="input-group">
-                              <span class="input-group-text">
-                                  <span class="fa-sharp fa-solid fa-house"></span>
-                              </span>
-                              <input type="text" class="form-control" placeholder="Jardin n° : ">
-                        </div>
-                    </div>
+                <div class="col-6">
+                  <div class="input-group">
+                    <span class="input-group-text">
+                        <span class="fa-sharp fa-solid fa-house"></span>
+                    </span>
+                    <input type="text" class="form-control flex-shrink-1" placeholder="Jardin n° : " required>
+                  </div>
+                </div>
 
-                    <div class="col-6">
-                        <div class="input-group">
-                        <span class="input-group-text">
-                              <span class="fa-sharp fa-solid fa-phone"></span>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Téléphone">
-                    </div>
-
-              </div>
-                    
+                <div class="col-6">
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <span class="fa-sharp fa-solid fa-phone"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Téléphone" required>
+                  </div>
+                </div>
               </div>
 
               <div class="row col-12 g-2 col-sm m-auto">
-                    <div class="input-group">
-                        <span class="input-group-text">
-                              <span class="fa-sharp fa-solid fa-envelope"></span>
-                        </span>
-                        <label for="Textarea1"></label>
-                        <textarea class="form-control" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
-                        
-                    </div>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <span class="fa-sharp fa-solid fa-envelope"></span>
+                  </span>
+                  <label for="Textarea1"></label>
+                  <textarea class="form-control" id="Textarea1" placeholder="Votre message ..." rows="3"></textarea>
+                </div>
               </div>
-
-              <div >
-                <button type="submit" class="btn btn-lg btn-success my-4 row col-10 m-auto ">Envoyer</button>
+              <div class="formButton">  
+                <button type="submit" class="greenButton registrationValid btn btn-lg btn-success my-4 row col-10 m-auto ">Envoyer</button>
+                <!-- <input class="registrationValid" type="submit" value="Valider"> -->
               </div>
-        
+              <div class="registrationMessage"></div>
           </form>
           </div>
-
+      </div>
           <!-- Caroussel -->
-          <div class="col-md-5 m-auto">
+          <div class="col-md-8 col-lg-7 m-auto carousselGarden">
             <h3 class="px-4 pt-5 pb-2  ">Plus beau jardin de l'année 2021</h3>
                       <!-- Carousel -->
-          <div class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+            <div class="carousel slide" data-bs-ride="carousel" data-interval="1000">
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
@@ -280,14 +272,14 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner carousel slide data-bs-ride=carousel">
               <div class="carousel-item active">
-                <img src="./assets/img/jardin1.png" alt="Premier jardin" class="d-block rounded-3" style="width:100%">
+                <img src="./assets/img/jardin1.png" alt="Premier jardin" class="d-block img-fluid rounded-3 " style="width:100%">
                 <div class="carousel-caption pt-1 pb-1 ps-2 pe-2" style="background: rgb(175, 219, 187);" >
                   <h3>Vainqueur</h3>
                   <p>Monsieur et Madame Dupond</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="./assets/img/jardin2.png" alt="Deuxième jardin" class="d-block" style="width:100%">
+                <img src="./assets/img/jardin2.png" alt="Deuxième jardin" class="d-block img-fluid rounded-3" style="width:100%">
                 <div class="carousel-caption pt-1 pb-1 ps-auto pe-auto" style="background: rgb(175, 219, 187);">
                   <h3>Deuxième</h3>
                   <p>Monsieur Durand</p>
@@ -295,7 +287,7 @@
               </div>
               
               <div class="carousel-item">
-                <img src="./assets/img/jardin3.png" alt="Troisième jardin" class="d-block" style="width:100%">
+                <img src="./assets/img/jardin3.png" alt="Troisième jardin" class="d-block img-fluid rounded-3" style="width:100%">
                 <div class="carousel-caption pt-1 pb-1 ps-2 pe-2" style="background: rgb(175, 219, 187);">
                   <h3>Troisième</h3>
                   <p>Madame Rouillard</p>
@@ -303,7 +295,7 @@
               </div>
 
               <div class="carousel-item">
-                <img src="./assets/img/jardin4.png" alt="Quatrième jardin" class="d-block" style="width:100%">
+                <img src="./assets/img/jardin4.png" alt="Quatrième jardin" class="d-block img-fluid rounded-3" style="width:100%">
                 <div class="carousel-caption pt-1 pb-1 ps-2 pe-2"style="background: rgb(175, 219, 187);">
                   <h3>Quatrième</h3>
                   <p>Monsieur Duparc</p>
@@ -320,9 +312,7 @@
             </button>
           </div>
         </div>
-
-          
-        </div>
+      
       </div>
 
     </div>
@@ -337,12 +327,7 @@
     <!-- Bootstrap JavaScript -->
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <!-- My JavaScript -->
-    <script src="script.js"></script>
+    <script src="./assets/js/evenement.js"></script>
 <!-- Inscription + caroussel -->
-
-
- 
- 
-
 </body>
 </html>

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Bootstrap CSS -->
-      <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+      <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
       <!-- My CSS -->  
-      <link rel="stylesheet" href="/assets/css/style.css">
+      <link rel="stylesheet" href="./assets/css/style.css">
       <link rel="stylesheet" media="only screen and (max-width: 500px)" href="./assets/css/style.mobile.css " />
       <script src="https://kit.fontawesome.com/6ddde329a5.js" crossorigin="anonymous"></script>
       
@@ -17,7 +17,7 @@
   <div class="container">
     <!-- Bandeau du site -->
     <header>
-      <img class="img-fluid"src="/assets/img/Bandeau_LesJardinDuLiege.png" alt="imageDeLassociation" />
+      <img class="img-fluid"src="./assets/img/Bandeau_LesJardinDuLiege.png" alt="imageDeLassociation" />
     </header>
 
      <!-- Création de la Navbar -->
@@ -29,16 +29,16 @@
         <div id="navbarDuSite" class="collapse navbar-collapse">
           <ul class="navbar-nav fw-bold">
               <li class="item-nav" >
-                  <a class="nav-link" href="./index.html">Accueil</a>
+                  <a class="nav-link" href="./index.php">Accueil</a>
               </li>
               <li class="item-nav">
-                  <a class="nav-link" href="./evenement.html">Evènements</a>
+                  <a class="nav-link" href="./evenement.php">Evènements</a>
               </li>
               <li class="item-nav">
                 <a class="nav-link active" href="#">Gestion</a>
             </li>
               <li class="item-nav">
-                  <a class="nav-link" href="index.html#contact">Contact</a>
+                  <a class="nav-link" href="index.php#contact">Contact</a>
               </li>
           </ul>
         </div>

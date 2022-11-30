@@ -6,49 +6,13 @@
   padding: 0;
 }
 
-
-
 body {
   width: 100%;
   height: 100%;
-  background-color: #6fc04a;
+  background-color: #C7FEA4;
 }
 
-body.modifPassword{
-  background-image: url(../background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#modifPasswordForm {
-  border: solid 1px;
-  max-width : 380px ;
-  border-radius: 7px;
-  background-color: rgba(249, 182, 11, 0.75);
-  margin:15% auto;
-  padding: 0 25px;
-}
-#modifPasswordForm h3{
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
-#modifPasswordForm input{
-  margin: 6px 0;
-  height: 45px;
-  padding: 0 10px;
-}
-#modifPasswordForm button{
-  margin: 15px 38px;
-  height: 45px;
-  width: 250px;
-  text-align: center;
-}
-
-
-
-
- .global-container {
+.global-container {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -64,8 +28,6 @@ h6 {
   color: rgb(52, 53, 53);
 }
 
-
-
 .navbar-nav {
   height: 100%;
   width: 100%;
@@ -79,7 +41,6 @@ h6 {
   text-decoration: none;
   margin: 0 20px;
 }
-
 
 .item-nav a::after {
   content: '';
@@ -98,14 +59,14 @@ h6 {
 .cadre {
   padding-bottom: 10px;
   border-top: 2px solid #bbb;
-  background-color: #ecfcb3;
+  background-color: #FCFFB2;
 }
 
 .orangeCadre {
   border: solid 2px black;
   border-radius: 10px;
   background-color: #e3bd92;
-  margin: auto;
+  
   
 }
 
@@ -183,105 +144,39 @@ img {
   height: 2.32rem;
   border-radius: 5px;
 }
-
 .styleForms {
-  border: solid 1px #537638;
+  border: solid 1px #73A9AD;
   margin: auto;
-  padding: auto;
+  padding: 15px 15px;
   border-radius: 1rem;
-  background: #b5c07f;
+  background: #b6E388;
+  width: 80%;
 }
 
-#adminForm {
-	margin-top: 4rem;
-  background-color: rgba(249, 182, 11, 0.75);
-	color: rgb(0, 0, 0);
-	border-radius: 5px;
-	padding: 30px;
-  height: 350px;
-  border: solid 1px;
-  max-width: 350px;
-  margin:4rem auto;
-}
-#adminForm h3{
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-.grey {
-	color: rgb(8, 3, 3);
-}
-.adjustFormAdmin {
-  margin-top: 12px;
-  padding-right:3px ;
-}
-.adjustFormAdmin p {
-  margin-top: 3px;
-  padding-right:3px ;
-}
-
-
-
-form #option {
-  color: #10110f;
-  margin-right: 5px;
-}
-
-.modifPasswordForm {
-	max-width: 450px;
-	margin: auto;
-	background-color: rgba(249, 182, 11, 0.75);
-	color: white;
-	border-radius: 5px;
-	padding: 50px;
-	margin-top: 300px;
-}
-
-input[type="email"], input[type="password"] {
-	padding: 15px;
-	width: 100%;
-	font-size: 1em;
-	border: 0;
-	border-radius: 5px;
-	color: #e9dfdf;
-	background-color: #0e1109;
-	margin-bottom: 15px;
-} 
-
-button {
-	background-color: #a5e307;
-	color: white;
-	padding: 15px;
-	width: 100%;
-	font-size: 1em;
-	font-weight: bold;
-	border-radius: 5px;
-	border: 0;
-	cursor: pointer;
-}
-
-.greenButton {
+.greenButton, .registrationValid {
+  width: 10rem;
   height: 2.5rem;
   border-radius: 10px;
   background: #198754;
   color: white;
-  padding-top: 6px;
+  font-size: large;
+  display: block;
+  margin: auto;
+
 }
-.greenButton:hover {
+.greenButton:hover, .registrationValid:hover {
   background: #00610d;
   }
-
 .formButton {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
+  padding-top: 1.40rem;
+  padding-bottom: auto;
+  
+ }
 
 
- .container-OneColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.demandeEnreg{
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* Caroussel */
@@ -305,15 +200,20 @@ carousel-inner carousel-item active img {
   float: left;
 }
 
-
-
 /* footer */
 footer {
-  background: #222;
+  background: #AA8B56;
   color: white;
   padding: 10px 0;
   text-align: center;
   padding-top: 10px;
+}
+
+@media screen and (min-width:1200px){
+  .houseAssembly img{
+    padding-top: 20px;
+    transform: scale(1.2) !important ; 
+  }
 }
 
 @media screen and (max-width:1200px){
@@ -326,7 +226,7 @@ footer {
   }
   .imgDisplay{
     width: 450px;
-    padding-left: 1rem !important;
+    padding-left: 0.75rem !important;
   }
   form#contact{
     max-width: 100%;
@@ -336,8 +236,26 @@ footer {
     height: 15rem;
     background-color: rgb(235, 13, 13);
   }
-  
-
+  .presentation img{
+    width: 90%;
+    margin:5%;
+  }
+  .presentation p{
+    width: 90%;
+    margin:4%;
+  }
+  .presentation h5{
+    width: 90%;
+    margin:7%;
+    margin-bottom:1px;
+  }
+  .presentation .localisationGarden{
+   padding: 0 0 !important;
+  }
+  .imgAdministred img{
+    transform: scale(1.3); 
+  }
+ 
  }
 
 @media screen and (max-width:992px){
@@ -359,20 +277,23 @@ footer {
   .carousel {
     max-width: 600px;
   }
-
- 
+  .personsAdmin{
+    display: none;
+  }
+  .buildingGarden{
+    padding: 20px !important;
+    width: 500px !important;
+    height: 250px;
+ }
+ .imgAdministred img{
+  width: 92%;
+  margin:12%;
+  transform: scale(1.2);  
+ }
 }
 
 @media screen and (max-width:768px){
-  .localisationGarden{
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-  .localisationGarden img{
-    width: 100%;
-   /*  border: none; */
-  }
+ 
   .imgHouse {
     columns: 1;
   }
@@ -382,27 +303,32 @@ footer {
   form#contact{
     width: 100%;
   }
- 
+  .personsAdmin{
+    display:initial;
+  }
+
+
+}
+
+@media screen and (max-width:576px){
+  .imgHouse {
+    max-width: 700px;
+    min-width: 150px;
+  }
+  .imgDisplay{
+    display: block;
+  }
+  
+  .cadreObligation {
+    max-width: 360px !important;
+  }
+  .orangeCadre{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 500px;
+  }
 }
 
 
-  @media screen and (max-width:576px){
-    .imgHouse {
-      max-width: 700px;
-      min-width: 150px;
-    }
-    .imgDisplay{
-      display: block;
-      padding-left: 0px !important;
-    }
-    .imgDisplay img{
-      width: 350px;
-    }
-    .cadreObligation {
-      max-width: 300px;
-    }
-   
-   .namePerson input {
-      padding-left: 0px;
-    } 
- }
+
+ 

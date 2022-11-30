@@ -14,7 +14,41 @@ body {
   background-color: #6fc04a;
 }
 
-.global-container {
+body.modifPassword{
+  background-image: url(../background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#modifPasswordForm {
+  border: solid 1px;
+  max-width : 380px ;
+  border-radius: 7px;
+  background-color: rgba(249, 182, 11, 0.75);
+  margin:15% auto;
+  padding: 0 25px;
+}
+#modifPasswordForm h3{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+#modifPasswordForm input{
+  margin: 6px 0;
+  height: 45px;
+  padding: 0 10px;
+}
+#modifPasswordForm button{
+  margin: 15px 38px;
+  height: 45px;
+  width: 250px;
+  text-align: center;
+}
+
+
+
+
+ .global-container {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -45,6 +79,7 @@ h6 {
   text-decoration: none;
   margin: 0 20px;
 }
+
 
 .item-nav a::after {
   content: '';
@@ -157,13 +192,80 @@ img {
   background: #b5c07f;
 }
 
+#adminForm {
+	margin-top: 4rem;
+  background-color: rgba(249, 182, 11, 0.75);
+	color: rgb(0, 0, 0);
+	border-radius: 5px;
+	padding: 30px;
+  height: 350px;
+  border: solid 1px;
+  max-width: 350px;
+  margin:4rem auto;
+}
+#adminForm h3{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.grey {
+	color: rgb(8, 3, 3);
+}
+.adjustFormAdmin {
+  margin-top: 12px;
+  padding-right:3px ;
+}
+.adjustFormAdmin p {
+  margin-top: 3px;
+  padding-right:3px ;
+}
+
+
+
+form #option {
+  color: #10110f;
+  margin-right: 5px;
+}
+
+.modifPasswordForm {
+	max-width: 450px;
+	margin: auto;
+	background-color: rgba(249, 182, 11, 0.75);
+	color: white;
+	border-radius: 5px;
+	padding: 50px;
+	margin-top: 300px;
+}
+
+input[type="email"], input[type="password"] {
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	border: 0;
+	border-radius: 5px;
+	color: #e9dfdf;
+	background-color: #0e1109;
+	margin-bottom: 15px;
+} 
+
+button {
+	background-color: #a5e307;
+	color: white;
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+
 .greenButton {
-  width: 10rem;
   height: 2.5rem;
   border-radius: 10px;
   background: #198754;
   color: white;
-  padding-top: 3px;
+  padding-top: 6px;
 }
 .greenButton:hover {
   background: #00610d;
@@ -202,6 +304,8 @@ carousel-inner carousel-item active img {
 .imgSideToSide {
   float: left;
 }
+
+
 
 /* footer */
 footer {
